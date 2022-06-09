@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class='nav'>
+        <img src='./src/logo.png' id='logo' class='navDiv' />
+        <div class='navDiv'>
+            <a class='navItem'>home</a>
+            <a class='navItem'>login</a>
+            <a class='navItem'>Bode</a>
+        </div>
+    </div>
+    <div class='container'>
+        <form class='form' onsubmit='handleForm()'>
+            <h1 id='cadastro'>Cadastro</h1>
+            <input placeholder='e-mail' id='email' class='formInput' />
+            <input placeholder='nome completo' id='nome' class='formInput' />
+            <input placeholder='data de nascimento' id='data' class='formInput' />
+            <input type='password' id='senha' placeholder='senha' class='formInput' />
+            <input type='password' id='senhaRep' placeholder='repita a senha' class='formInput' />
+            <button class='formButton' id="handle">Cadastrar</button>
+            <button class='formButton' id='google'><img src='./src/google.png' /> Entrar com Google</button>
+            <button class='formButton' id='apple'><img src='./src/apple.png' /> Entrar com Icloud</button>
+            <div><a>Clique </a><a onclick='toLogin()' style='cursor:pointer;'>aqui </a><a id="textTo">para fazer login</a></div>
+        </form>
+        <img id='form' src='./src/form.png' />
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
